@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><title>Validasi Jadwal</title></head>
+<body>
+  <h1>Validasi Jadwal</h1>
+  <input type="date" id="tgl"><br><br>
+  <input type="number" id="dur" value="1"><br><br>
+  <button type="button" onclick="cek()">Cek Jadwal</button>
+  <p id="hasil"></p>
+  <script src="config.js"></script>
+  <script src="schedule.js"></script>
+  <script>
+    function cek() {
+      document.getElementById("hasil").textContent =
+        validasiJadwal(document.getElementById("tgl").value, Number(document.getElementById("dur").value));
+    }
+  </script>
+</body>
+</html>
