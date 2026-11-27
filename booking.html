@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><title>Form Peminjaman</title></head>
+<body>
+  <h1>Form Pengajuan Peminjaman</h1>
+  <input type="text" placeholder="Nama mahasiswa"><br><br>
+  <select><option>Ruang 101</option><option>Ruang 202</option><option>Laboratorium 1</option></select><br><br>
+  <input type="date"><br><br>
+  <input type="number" id="durasi" min="1" value="1"><br><br>
+  <button type="button">Ajukan Peminjaman</button>
+  <script src="config.js"></script>
+  <script>document.getElementById("durasi").max = maxDurasiJam;</script>
+</body>
+</html>
