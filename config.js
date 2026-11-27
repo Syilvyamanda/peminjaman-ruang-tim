@@ -1,1 +1,1 @@
-const maxDurasiJam = 4;
+const maxDurasiJam = 3;
